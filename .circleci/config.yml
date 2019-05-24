@@ -70,7 +70,7 @@ jobs:
           command: |
             sudo apt-get install python-dev python-pip
             sudo pip install awscli
-            aws — version
+            aws --version
       # Set the signature version for the S3 auth
       - run:
           name: Setting Signature Version 4 for S3 Request Authentication

@@ -30,10 +30,10 @@ jobs:
       - run:
           name: Linting
           command: npm run lint
-      # Test the source code
+      # Test the source code; watch=false flag for single run in CI pipeline
       - run:
           name: Testing
-          command: npm run test
+          command: npm run test -- --watch=false
       # Build project with different configuration based on
       # the current branch
       # - run:
